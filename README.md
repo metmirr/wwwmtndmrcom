@@ -2,7 +2,7 @@
 www.mtndmr.com Eğitimlerinde yapılan projeler
 
 
-Flask uygulamalarını çalıştırmak için
+## Flask uygulamalarını çalıştırmak için
     
   * İlk önce projeyi lokalinizi indirin:
     
