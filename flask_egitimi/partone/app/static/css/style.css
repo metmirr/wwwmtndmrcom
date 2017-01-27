@@ -1,0 +1,48 @@
+html,body{
+	width: 100%;
+  	height: 100%;
+	margin: 0;
+	background:#29261F;
+	color: #fff;
+	font-family: helvetica;
+}
+/*row --------------------------------*/
+.row{
+	width: 100%;
+	margin: 0;
+	background:#29261F;
+	color: #fff;
+	font-family: helvetica;
+}
+/*Footer -----------------------------*/
+.footer{
+	background:#29261F;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.container .row .table-responsive .table {
+	font-size: 17.5px !important;
+	font-family: helvetica !important;
+}
+.container .row .table-responsive .table p {
+	font-size: 17.5px !important;
+	font-family: helvetica !important;
+}
+/*index sayfasındaki containerin yerini ayarlamak*/
+.index {
+	margin-top: 100px !important;
+}
+/* post_list.html sayfasındaki container için*/
+.post-list{
+	margin-top: 0px;
+}
+/* Font ayarları ==============================*/
+.a-text{
+	font-size: 15px;
+	font-family: helvetica, serif;
+	font-style: ;
+}
+/* .row .menu index sayfaındaki row satırları arasındaki boşluk*/
+.menu{
+	margin-top: 43px;
+}
