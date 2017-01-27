@@ -4,5 +4,14 @@
 {% import 'bootstrap/wtf.html' as wtf %} 
 
 {% block page_content %}
-	{{wtf.quick_form(form)}}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			{{wtf.quick_form(form)}}
+			<p><a class="btn btn-primary" href=" {{url_for('register_todb')}} "> Veritabanına kaydetmek için tıkla</a></p>
+		</div>
+	</div>
+</div>
 {% endblock %}
+
+

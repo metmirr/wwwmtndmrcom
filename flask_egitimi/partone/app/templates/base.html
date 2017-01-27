@@ -8,32 +8,27 @@
 {% endblock %}
 
 {% block navbar %}
-<div class="navbar navbar-inverse" role="navigation" style="background:#29261F; color: white;">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle"
-					data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="{{url_for('index')}}" class="navbar-brand a-text"> 
-						<strong>partone</strong></a>					
-				</div>
-				<div class="navbar-collapse collapse" >
-					<ul class="nav navbar-nav">
-							<li><a href="" class="navbar-brand a-text"><strong>Kullanıcılar</strong></a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="" class="navbar-brand a-text"><strong>Oturum</strong></a></li>	
-				    </ul>
-					
-				</div>
-			</div>
+<div class="navbar navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle"
+			data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">PartoneApp</a>
 		</div>
-	
+			<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href=" {{url_for('index')}} ">Anasayfa</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 {% endblock %}
+
 
 {% block content %}
 	<div class="container">
