@@ -1,4 +1,7 @@
-from flask import Flask, render_template, session, redirect, url_for, flash
+from flask import (Flask, 
+	render_template, session, 
+	redirect, url_for, flash
+)
 
 #eklentiler
 from flask_bootstrap import Bootstrap
@@ -44,6 +47,7 @@ class User(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	username = db.Column(db.String(64), unique=True)
 
+
 @app.route('/')
 def index(name='Yabancı'):
 	"""
@@ -53,6 +57,7 @@ def index(name='Yabancı'):
 	if session.get('name'):
 		name = session.get('name')
 	return render_template('index.html', name=name)
+
 
 @app.route('/kayıt', methods=['GET', 'POST'])
 def register():
@@ -69,6 +74,7 @@ def register():
 		return redirect(url_for('index'))
 	return render_template('register.html', form=form)
 
+
 @app.route('/veritabanına-kayıt', methods=['GET', 'POST'])
 def register_todb():
 	"""
@@ -84,6 +90,7 @@ def register_todb():
 		return redirect(url_for('index'))
 	return render_template('registertodb.html', form=form)
 
+
 @app.route('/user/<username>')
 def user(username):
 	"""
@@ -93,6 +100,6 @@ def user(username):
 	user = User.query.filter_by(username=username).first()
 	return render_template('user.html', user=user)
 
+
 if __name__ == '__main__':
     manager.run()
-
